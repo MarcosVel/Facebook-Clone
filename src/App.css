@@ -1,4 +1,14 @@
 :root {
    --white-gray: #eff2f5;
    --blue-face: #2e81f4;
+   --bg-face: #f1f2f5;
+}
+
+.app {
+   background-color: var(--bg-face);
+   height: 100vh;
+}
+
+.app__body {
+   display: flex;
 }
