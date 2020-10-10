@@ -28,7 +28,7 @@ function StoryReel() {
          <Story 
             image='https://cdn.pixabay.com/photo/2018/02/16/05/35/squirrel-3156987_960_720.jpg'
             profileSrc='https://cdn.pixabay.com/photo/2013/10/09/02/26/beef-192976_960_720.jpg'
-            title='Daniel'
+            title='Lucas'
          />
       </div>
    )
