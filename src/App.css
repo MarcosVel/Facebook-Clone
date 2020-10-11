@@ -6,7 +6,6 @@
 
 .app {
    background-color: var(--bg-face);
-   height: 100vh;
 }
 
 .app__body {
