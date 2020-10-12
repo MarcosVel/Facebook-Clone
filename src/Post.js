@@ -3,9 +3,9 @@ import React from 'react';
 import './Post.css';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+// import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import NearMeIcon from '@material-ui/icons/NearMe';
-import { ExpandMoreOutlined } from '@material-ui/icons';
+// import { ExpandMoreOutlined } from '@material-ui/icons';
 
 function Post({ profilePic, image, username, timestamp, message }) {
    return (
@@ -40,10 +40,10 @@ function Post({ profilePic, image, username, timestamp, message }) {
                <NearMeIcon />
                <p>Share</p>
             </div>
-            <div className='post__option'>
+            {/* <div className='post__option'>
                <AccountCircleIcon />
-               <ExpandMoreOutlined />               
-            </div>
+               <ExpandMoreOutlined />
+            </div> */}
          </div>
       </div>
    )

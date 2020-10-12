@@ -1,5 +1,5 @@
 .header {
-   padding: 15px 20px;
+   padding: 7px 20px;
    display: flex;
    justify-content: space-between;
    position: sticky;
@@ -7,6 +7,7 @@
    z-index: 100;
    top: 0;
    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+   height: 44px;
 }
 
 .header__left {
@@ -24,7 +25,7 @@
 }
 
 .header__left > img {
-   height: 40px;
+   height: 44px;
 }
 
 .header__input > input {
@@ -81,4 +82,11 @@
 
 .header__right {
    display: flex;
+}
+
+@media (max-width: 1133px) {
+   .header__input > input {
+      display: none;
+      
+   }
 }
