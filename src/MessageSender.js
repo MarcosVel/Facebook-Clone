@@ -8,11 +8,15 @@ import { useStateValue } from './StateProvider';
 import db from './firebase';
 import firebase from 'firebase';
 
+import IconButton from '@material-ui/core/IconButton';
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
+
 function MessageSender() {
 
    const [ { user }, dispatch ] = useStateValue();
    const [ input, setInput ] = useState('');
    const [ imageUrl, setImageUrl ] = useState('');
+   // const [ imageLocal, setImageLocal ] = useState('');
 
    const handleSubmit = e => {
       e.preventDefault();
@@ -27,6 +31,7 @@ function MessageSender() {
 
       setInput('');
       setImageUrl('');
+      // setImageLocal('');
    };
 
    return (
@@ -45,6 +50,22 @@ function MessageSender() {
                   onChange={ (e) => setImageUrl(e.target.value) }
                   placeholder='Gif/imagem URL (Opcional)'
                />
+
+               {/* <div className='divBtnCam'>
+                  <input 
+                     accept="image/*"
+                     className='inputBtnCam' 
+                     id="icon-button-file"
+                     type="file" 
+                     value={ imageLocal }
+                     onChange={ (e) => setImageLocal(e.target.files) } 
+                  />
+                  <label htmlFor="icon-button-file">
+                     <IconButton color="primary" aria-label="upload picture" component="span">
+                        <PhotoCamera />
+                     </IconButton>
+                  </label>
+               </div> */}
 
                <button onClick={ handleSubmit } type='submit' >Hidden submit</button>
             </form>

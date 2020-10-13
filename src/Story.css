@@ -3,7 +3,8 @@
    background-position: center center;
    background-size: cover;
    background-repeat: no-repeat;
-   width: 120px;
+   /* width: 120px; */
+   width: 105px;
    height: 200px;
    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
    border-radius: 10px;

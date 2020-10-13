@@ -11,3 +11,7 @@
 .app__body {
    display: flex;
 }
+
+input {
+   font-size: 15px;
+}
